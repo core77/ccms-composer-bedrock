@@ -1,6 +1,6 @@
 {
-  "name": "concretecms/composer",
-  "description": "A fully featured skeleton for a composer managed Concrete site",
+  "name": "core77/ccms-composer-bedrock",
+  "description": "A fully featured skeleton for a composer managed Concrete site with bedrock theme support",
   "type": "project",
   "license": "MIT",
   "prefer-stable": true,

@@ -1,0 +1,26 @@
+services:
+  mariadb:
+    image: mariadb:10.11
+    container_name: <mysite>_mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: start
+      MYSQL_DATABASE: <mysite>
+      MYSQL_USER: user
+      MYSQL_PASSWORD: start
+    # use a docker volume
+    volumes:
+      - mariadb_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
+  adminer:
+    image: adminer
+    container_name: <mysite>_adminer
+    depends_on:
+      - mariadb
+    ports:
+      - "8888:8080"
+
+volumes:
+  mariadb_data:
+    driver: local

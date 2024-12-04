@@ -1,20 +1,32 @@
-# Ignore Composer stuff
+# Composer installable stuff
+# or other packages
+/public/packages/vimeo_video/
+/public/packages/md_csv_user_import_export/
+
+# Composer
 /vendor/
 
-# Ignore Concrete stuff
+# Concrete CMS
 /public/concrete
 /public/application/files
+/public/application/languages/
 
-# Ignore build files
+# Build files
 /public/application/css/main.css
 /public/application/js/main.js
+/public/packages/theme_basic_bedrock/themes/basic_bedrock/css/main.css
+/public/packages/theme_basic_bedrock/themes/basic_bedrock/js/main.js
+/public/packages/theme_basic_bedrock/themes/basic_bedrock/js/main.js.LICENSE.txt
 
-# Ignore developer stuff
+# Developer misc
 /.idea
 /node_modules
 /.env
-/public/mix-manifest.json
 /phpunit.xml
 /build
 /.phpunit.*
 /public/hot
+mix-manifest.json
+
+# macOS
+.DS_Store
